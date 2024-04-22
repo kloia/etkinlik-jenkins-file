@@ -43,7 +43,7 @@ pipeline {
             steps {
                 sh """
                 bundle install
-                bundle exec parallel_cucumber -n ${params.ThreadCount.toInteger()} -o '-p parallel --tags "${TagName}" headless=${Headless} browser=${Browser}'
+                bundle exec parallel_cucumber -n 1 -o '-p parallel --tags "${TagName}" headless=${Headless} browser=${Browser}'
                  """
             }
         }
