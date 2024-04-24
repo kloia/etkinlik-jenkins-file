@@ -44,7 +44,7 @@ pipeline {
             steps {
                 sh """
                 bundle install
-                bundle exec parallel_cucumber -n 1 -o '-p parallel --tags "${TagName}" headless=${Headless} browser=${Browser}'
+                bundle exec cucumber --tags "${params.TagName}" headless=${Headless} browser=${Browser}'
                  """
             }
         }
