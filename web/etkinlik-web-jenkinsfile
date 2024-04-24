@@ -44,7 +44,7 @@ pipeline {
             steps {
                 sh """
                 bundle install
-                bundle exec cucumber --tags "${params.TagName}" headless=${Headless} browser=${Browser}'
+                bundle exec cucumber --tags "${params.TagName}" headless=${Headless} browser=${Browser}
                  """
             }
         }
