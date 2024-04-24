@@ -36,7 +36,7 @@ pipeline {
                           extensions                       : [],
                           gitTool                          : 'Default',
                           submoduleCfg                     : [],
-                          userRemoteConfigs                : [[credentialsId: 'qa-day2-jenkins-token', url: 'https://github.com/gokcesahinnn/web-test-automation-ruby-base-project.git']]
+                          userRemoteConfigs                : [[credentialsId: 'qa-day2-jenkins-token', url: 'https://github.com/kloia/qa-day2-ruby-capybara.git']]
                 ])
             }
         }
