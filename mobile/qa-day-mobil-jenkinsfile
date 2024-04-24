@@ -33,7 +33,7 @@ pipeline {
                           extensions                       : [],
                           gitTool                          : 'default',
                           submoduleCfg                     : [],
-                          userRemoteConfigs                : [[credentialsId: 'qa-day2-jenkins-token', url: 'https://github.com/kloia/qa-day-2-android-ruby.git']]])
+                          userRemoteConfigs                : [[credentialsId: 'qa-day2-jenkins-token', url: 'https://github.com/kloia/qa-day2-android-ruby.git']]])
             }
         }
         stage('Running Test') {
